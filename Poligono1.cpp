@@ -22,14 +22,21 @@ Poligono::getpoints(){
         q++;
     return q;
 }
-Poligono::area(){
 
-}
 
-Rectangulo::Rectangulo(Point &p,Point &a){
-
+Rectangulo::Rectangulo(Point &p,Point &a):Poligono(p,Point(p.getx(),p.gety()),a,Point(a.getx(),a.gety()) ){
+    
 }
 Rectangulo::Rectangulo(int x;int y;int x1,int y1 ){
+    Point *ss;
+    s=new Point[4];
+    s[0]=Point(x,y);
+    s[1]=Point(x1,y2);
+    s[2]=Point(x,y);
+    s[3]=Point(x1,y1);
+    s[4]=Point(x,y);
+    p=s[4];
+
 }
 Rectangulo::area(){
 }
