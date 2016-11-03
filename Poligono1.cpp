@@ -10,17 +10,24 @@ Poligono::Poligono(Point p[],int _size){
 Poligono::Poligono(Pointarray &p){
     p=Pointarray p;
 }
-Poligono::area(){
-}
-Poligono::getpoligonos(){
+Poligono::getnumpoligonos(){
     return nro;
 }
-Poligono::getsides(){
+Poligono::getnumsides(){
+    return p.getside();
 }
 Poligono::getpoints(){
+    int i,q=0;
+    for(;i<=_size;++i)
+        q++;
+    return q;
+}
+Poligono::area(){
+
 }
 
 Rectangulo::Rectangulo(Point &p,Point &a){
+
 }
 Rectangulo::Rectangulo(int x;int y;int x1,int y1 ){
 }
