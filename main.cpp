@@ -1,9 +1,7 @@
 #include <iostream>
-
+#include "poligono.h"
 using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
-    return 0;
-}
+    
