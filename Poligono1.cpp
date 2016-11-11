@@ -3,12 +3,14 @@
 using namespace std;
 
 Poligono::Poligono(Point p[],int _size){
+    this->_size=size;
     Pointarray a(p,_size);
+    
     p=a;
 
 }
-Poligono::Poligono(Pointarray &p){
-    p=Pointarray p;
+Poligono::Poligono(Pointarray &a){
+    p=Pointarray a;
 }
 Poligono::getnumpoligonos(){
     return nro;
